@@ -12,6 +12,10 @@
       <el-button type="primary" style="width:100%;" @click.native.prevent="handleSubmit2" :loading="logining">登录</el-button>
       <!--<el-button @click.native.prevent="handleReset2">重置</el-button>-->
     </el-form-item>
+    <el-form-item style="width:100%;">
+      <el-button type="default" style="width:100%;" @click.native.prevent="handleRegister" >租户入驻</el-button>
+      <!--<el-button @click.native.prevent="handleReset2">重置</el-button>-->
+    </el-form-item>
   </el-form>
 </template>
 
@@ -38,6 +42,10 @@
       };
     },
     methods: {
+        //跳转到租户注册
+        handleRegister(){
+            this.$router.push({ path: '/register' });
+        },
       handleReset2() {
         this.$refs.ruleForm2.resetFields();
       },
