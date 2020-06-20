@@ -4,12 +4,8 @@ import NotFound from './views/404.vue'
 import Home from './views/Home.vue'
 import Main from './views/Main.vue'
 import Table from './views/nav1/Table.vue'
-import Form from './views/nav1/Form.vue'
-import user from './views/nav1/user.vue'
-import Page4 from './views/nav2/Page4.vue'
-import Page5 from './views/nav2/Page5.vue'
-import Page6 from './views/nav3/Page6.vue'
 import echarts from './views/charts/echarts.vue'
+import CourseType from './views/course/CourseType.vue'
 
 let routes = [
     {
@@ -34,42 +30,41 @@ let routes = [
     {
         path: '/',
         component: Home,
-        name: '导航一',
-        iconCls: 'el-icon-message',//图标样式class
-        children: [
-            { path: '/main', component: Main, name: '主页', hidden: true },
-            { path: '/table', component: Table, name: 'Table' },
-            { path: '/form', component: Form, name: 'Form' },
-            { path: '/user', component: user, name: '列表' },
-        ]
-    },
-    {
-        path: '/',
-        component: Home,
-        name: '导航二',
-        iconCls: 'fa fa-id-card-o',
-        children: [
-            { path: '/page4', component: Page4, name: '页面4' },
-            { path: '/page5', component: Page5, name: '页面5' }
-        ]
-    },
-    {
-        path: '/',
-        component: Home,
         name: '',
         iconCls: 'fa fa-address-card',
         leaf: true,//只有一个节点
         children: [
-            { path: '/page6', component: Page6, name: '导航三' }
+            { path: '/main', component: echarts, name: '首页' }
         ]
     },
     {
         path: '/',
         component: Home,
-        name: 'Charts',
-        iconCls: 'fa fa-bar-chart',
+        name: '课程管理',
+        iconCls: 'el-icon-message',//图标样式class
         children: [
-            { path: '/echarts', component: echarts, name: 'echarts' }
+            { path: '/courseType', component: CourseType, name: '课程类型' },
+            { path: '/course', component: Table, name: '课程信息' }
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '职位管理',
+        iconCls: 'fa fa-superpowers',//图标样式class
+        children: [
+            { path: '/jobType', component: Main, name: '职位类型' },
+            { path: '/job', component: Table, name: '职位信息' }
+        ]
+    },
+    {
+        path: '/',
+        component: Home,
+        name: '系统管理',
+        iconCls: 'el-icon-message',//图标样式class
+        children: [
+            { path: '/tenantType', component: Main, name: '租户类型' },
+            { path: '/tenant', component: Table, name: '租户信息' }
         ]
     },
     {
