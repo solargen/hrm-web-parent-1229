@@ -6,6 +6,7 @@ import Main from './views/Main.vue'
 import Table from './views/nav1/Table.vue'
 import echarts from './views/charts/echarts.vue'
 import CourseType from './views/course/CourseType.vue'
+import Course from './views/course/Course.vue'
 
 let routes = [
     {
@@ -44,7 +45,7 @@ let routes = [
         iconCls: 'el-icon-message',//图标样式class
         children: [
             { path: '/courseType', component: CourseType, name: '课程类型' },
-            { path: '/course', component: Table, name: '课程信息' }
+            { path: '/course', component: Course, name: '课程信息' }
         ]
     },
     {
