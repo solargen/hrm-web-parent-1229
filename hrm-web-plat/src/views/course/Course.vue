@@ -22,6 +22,12 @@
 				<el-form-item>
 					<el-button size="small" type="primary" @click="handleAdd">新增</el-button>
 				</el-form-item>
+				<el-form-item>
+					<el-button size="small" type="success" @click="handleOnline">上线</el-button>
+				</el-form-item>
+				<el-form-item>
+					<el-button size="small" type="warning" @click="handleOffline">下线</el-button>
+				</el-form-item>
 			</el-form>
 		</el-col>
 
@@ -218,6 +224,89 @@
 			}
 		},
 		methods: {
+	        //课程上线
+            handleOnline(){
+
+                //选取选中的行
+				if(this.sels.length<=0){
+                    this.$message({
+                        message: "请选中要上线的课程!",
+                        type: 'warning'
+                    });
+                    return;
+				}
+				//判断是否重复上线,后端判断
+
+				let ids = this.sels.map(course=>{
+				    return course.id;
+				})
+
+                this.$confirm('你确定要上线这'+ids.length+'个课程?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    this.$http.post("/course/course/online",ids)
+                        .then(res=>{
+                            let {success,message} = res.data;
+                            if(success){
+                                this.$message({
+                                    message: "上线成功!",
+                                    type: 'success'
+                                });
+                                this.getCourses();
+                            }else{
+                                this.$message({
+                                    message: message,
+                                    type: 'error'
+                                });
+                            }
+                        })
+                })
+
+
+
+
+			},
+			//课程下线
+            handleOffline(){
+                //选取选中的行
+                if(this.sels.length<=0){
+                    this.$message({
+                        message: "请选中要下线的课程!",
+                        type: 'warning'
+                    });
+                    return;
+                }
+                //判断是否重复上线,后端判断
+
+                let ids = this.sels.map(course=>{
+                    return course.id;
+                })
+
+                this.$confirm('你确定要下线这'+ids.length+'个课程?', '提示', {
+                    confirmButtonText: '确定',
+                    cancelButtonText: '取消',
+                    type: 'warning'
+                }).then(() => {
+                    this.$http.post("/course/course/offline",ids)
+                        .then(res=>{
+                            let {success,message} = res.data;
+                            if(success){
+                                this.$message({
+                                    message: "下线成功!",
+                                    type: 'success'
+                                });
+                                this.getCourses();
+                            }else{
+                                this.$message({
+                                    message: message,
+                                    type: 'error'
+                                });
+                            }
+                        })
+                })
+			},
 		    //课程图片上传成功
             handleUploadSuccess(response, file, fileList){
                 let {success,message,resultObj} = response;
