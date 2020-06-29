@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]> <html lang="zh-CN" class="ie8"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/user.css" />
+		<link type="text/css" rel="stylesheet" href="css/color-style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.method.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.tablelist.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/common1.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+	</head>
+
+	<body>
+		<div id="nav" class="bg-color">
+			<div class="nav-content w1210">
+				<div class="logo-info">
+					<a href="/" target="_blank" class="logo fore1">
+						<img src="css/mall_logo_0_white.png" style="margin-top: 10px;" />
+					</a>
+					<div class="user-link">
+						<a href="/user.html" target="_self" class="fore2">我的商城</a>
+						<a href="/" target="_blank" class="fore3">返回商城首页</a>
+					</div>
+				</div>
+				<div class="navitems">
+					<ul>
+						<li class="fore-1">
+							<a href="/user.html" target="_self" href="">首页</a>
+						</li>
+						<li class="fore-3">
+							<div class="dl">
+								<div class="dt">
+									<span>账户设置</span>
+									<b></b>
+								</div>
+								<div class="dd">
+									<a href="/user/profile.html" target="_self">
+										<span>个人资料</span>
+									</a>
+									<a href="/user/security.html" target="_self">
+										<span>账户安全</span>
+									</a>
+									<a href="/user/bind.html" target="_self">
+										<span>账号绑定</span>
+									</a>
+									<a href="/user/address.html" target="_self">
+										<span>收货地址</span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="fore-4">
+							<a href="/user/message/internal.html">
+								消息
+
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div id="content">
+			<div class="content w1210 clearfix">
+				<!-- 引入左侧导航条文件 -->
+				<div class="con-left fl">
+					<div class="nav-list">
+						<div class="func func1">
+							<p class="title">
+								<i></i>
+								<span>会员中心</span>
+							</p>
+							<a href="/user/center.html" class="item curs">
+								<span>欢迎页</span>
+								<i></i>
+							</a>
+							<a href="/user/profile.html" class="item ">
+								<span>个人资料</span>
+								<i></i>
+							</a>
+							<a href="/user/security.html" class="item ">
+								<span>账户安全</span>
+								<i></i>
+							</a>
+
+							<a href="/user/address.html" class="item ">
+								<span>收货地址</span>
+								<i></i>
+							</a>
+							<a href="/user/message/internal.html" class="item ">
+								<span>我的消息</span>
+								<i></i>
+							</a>
+							<a href="/user/growth-value.html" class="item ">
+								<span>我的成长值</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func2">
+							<p class="title">
+								<i></i>
+								<span>交易中心</span>
+							</p>
+							<a href="/user/order.html" class="item ">
+								<span>我的订单</span>
+								<i></i>
+							</a>
+							<a href="/user/evaluate/index.html" class="item ">
+								<span>我的评价</span>
+								<i></i>
+							</a>
+							<a href="/user/back.html" class="item ">
+								<span>退款退货</span>
+								<i></i>
+							</a>
+							<!-- <a href="/user/replace.html" class="item">
+				<span>换货维修</span>
+				<i></i>
+			</a> -->
+							<a href="/user/complaint.html" class="item ">
+								<span>我的投诉</span>
+								<i></i>
+							</a>
+							<a href="/user/collect/goods.html" class="item ">
+								<span>我的收藏</span>
+								<i></i>
+							</a>
+							<!-- <a href="" class="item"><span>我的二手</span><i></i></a> -->
+						</div>
+						<div class="func func3">
+							<p class="title">
+								<i></i>
+								<span>资金中心</span>
+							</p>
+							<a href="/user/capital-account.html" class="item ">
+								<span>我的资金账户</span>
+								<i></i>
+							</a>
+							<a href="/user/recharge.html" class="item  ">
+								<span>我的充值</span>
+								<i></i>
+							</a>
+							<a href="" class="item">
+								<span>我的积分</span>
+								<i></i>
+							</a>
+							<a href="/user/bonus.html" class="item ">
+								<span>我的优惠券</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func4">
+							<p class="title">
+								<i></i>
+								<span>服务中心</span>
+							</p>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>退换货政策</span>
+								<i></i>
+							</a>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>操作帮助</span>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 正文，由view提供 -->
+
+				<div class="con-right fr">
+					<div class="con-right fr">
+						<div class="con-right-text">
+							<div class="tabmenu">
+								<div class="user-status">
+									<span class="tab-type active" data-type="1">
+					<a href="javascript:void(0);" target="_self">
+						<span>我的优惠券</span>
+									<em class="tag-em SZY-SHOP-BONUS-COUNT">0</em>
+									<span class="vertical-line">|</span>
+									</a>
+									</span>
+								</div>
+								
+							</div>
+							<div class="content-info">
+								<div class="content-list">
+									<form method="post" action="http://www.itsource.com/user/bonus.html" name="">
+										<div class="screen-box">
+											<div class="sort-box fl">
+												<span class="orderby" data-sortname="ub.bonus_price" data-sortorder="asc">
+								<a href="javascript:;">
+									金额
+									<b class="icon-order-ASCending"></b>
+								</a>
+							</span>
+												<span class="orderby" data-sortname="ub.end_time" data-sortorder="asc">
+								<a href="javascript:;">
+									到期时间
+									<b class="icon-order-ASCending"></b>
+								</a>
+							</span>
+												<span class="orderby" data-sortname="ub.start_time" data-sortorder="asc">
+								<a href="javascript:;">
+									生效时间
+									<b class="icon-order-ASCending"></b>
+								</a>
+							</span>
+											</div>
+										</div>
+									</form>
+
+									<div id="table_list">
+										<!---->
+										<div class="coupon-list clearfix">
+											<div class="no-data">
+												<i class="fa fa-exclamation-circle"></i> 您还没有任何优惠券
+											</div>
+										</div>
+										<!---->
+									</div>
+
+									<!-- 列表页面 _end -->
+									<div class="operat-tips">
+										<h4>我的优惠券注意事项</h4>
+										<ul class="operat-panel">
+											<li>
+												<span>当您从购物车中去结算时，在订单确认页面可以选择您的优惠券，获得相应的优惠</span>
+											</li>
+											<li>
+												<span>当您使用了优惠券的订单发生退货时，需要将使用了该优惠券的订单内所有商品全部退货完成后，才能退回优惠券</span>
+											</li>
+											<li>
+												<span>店铺优惠券仅可在发行店铺使用；支付优惠券领取后会自动充值到您的余额中</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 验证码脚本 -->
+						<script type="text/javascript" src="js/jquery.captcha.js"></script>
+						<script type="text/javascript">
+							var tablelist = null;
+							$().ready(function() {
+								tablelist = $("#table_list").tablelist({
+									page: {
+										// 每页显示8条记录
+										page_size: 8
+									}
+								});
+
+								// 优惠券类型
+								$("body").on("click", ".tab-type", function() {
+									$(".tab-type").removeClass('active');
+									$(this).addClass('active');
+
+									var type = $(this).data("type");
+
+									if(type == 0) {
+										$(".bonus-search").hide();
+									} else {
+										$(".bonus-search").show();
+									}
+
+									tablelist.load({
+										'type': type
+									});
+
+									return false;
+								});
+								// 排序
+								$("body").on("click", ".orderby", function() {
+									$(".orderby").removeClass('curr');
+									$(this).addClass('curr');
+
+									var sortname = $(this).data("sortname");
+									var sortorder = ($(this).data('sortorder') == 'desc') ? 'asc' : 'desc';
+
+									$(this).data('sortorder', sortorder)
+									if(sortorder == 'desc') {
+										$(this).find(".icon-order-ASCending").removeClass("icon-order-ASCending").addClass("icon-order-DESCending");
+									} else {
+										$(this).find(".icon-order-DESCending").removeClass("icon-order-DESCending").addClass("icon-order-ASCending");
+									}
+
+									tablelist.sort(sortname, sortorder).always(function(result) {
+
+									});
+
+									return false;
+								});
+
+								// 店铺搜索
+								$("body").on("click", ".order-search-btn", function() {
+									tablelist.load({
+										'shop_name': $("#shop_name").val()
+									})
+									return false;
+								});
+
+								// 删除优惠券
+								$("body").on("click", ".coupon-del", function() {
+									var user_bonus_id = $(this).data('user-bonus-id');
+									$.confirm("您确定要删除该优惠券吗？", function() {
+										$.post("/user/bonus/delete.html", {
+											user_bonus_id: user_bonus_id
+										}, function(result) {
+											if(result.code == 0) {
+												$(".SZY-SYSTEM-BONUS-COUNT").html(result.system_bonus_count);
+												$(".SZY-SHOP-BONUS-COUNT").html(result.shop_bonus_count);
+												$.msg(result.message);
+												tablelist.load();
+											} else {
+												$.msg(result.message, {
+													time: 5000
+												});
+											}
+										}, "JSON");
+									});
+								})
+
+							});
+						</script>
+					</div>
+				</div>
+
+				<!-- 正文结束，由view提供 -->
+			</div>
+		</div>
+
+		<!-- 引入底部文件 -->
+		<!-- 底部 _start-->
+		<div class="site-footer">
+			<div class="footer-related">
+				<div class="footer-info">
+					<div class="info-text">
+						<!-- 底部导航 -->
+						<p class="nav-bottom">
+						</p>
+						<p>
+							Copyright 源代码教育咨询有限公司(www.itsource.cn) 版权所有
+							<a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备88888888号</a>
+						</p>
+						<p class="company-info" style="display: none;">四川省成都市高新区天府新谷</p>
+						<p class="qualified">
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+	</body>
+
+	</html>

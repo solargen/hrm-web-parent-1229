@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]> <html lang="zh-CN" class="ie8"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/user.css" />
+		<link type="text/css" rel="stylesheet" href="css/color-style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.method.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.tablelist.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/common1.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+	</head>
+
+	<body>
+		<div id="nav" class="bg-color">
+			<div class="nav-content w1210">
+				<div class="logo-info">
+					<a href="/" target="_blank" class="logo fore1">
+						<img src="css/mall_logo_0_white.png" style="margin-top: 10px;" />
+					</a>
+					<div class="user-link">
+						<a href="/user.html" target="_self" class="fore2">我的商城</a>
+						<a href="/" target="_blank" class="fore3">返回商城首页</a>
+					</div>
+				</div>
+				<div class="navitems">
+					<ul>
+						<li class="fore-1">
+							<a href="/user.html" target="_self" href="">首页</a>
+						</li>
+						<li class="fore-3">
+							<div class="dl">
+								<div class="dt">
+									<span>账户设置</span>
+									<b></b>
+								</div>
+								<div class="dd">
+									<a href="/user/profile.html" target="_self">
+										<span>个人资料</span>
+									</a>
+									<a href="/user/security.html" target="_self">
+										<span>账户安全</span>
+									</a>
+									<a href="/user/bind.html" target="_self">
+										<span>账号绑定</span>
+									</a>
+									<a href="/user/address.html" target="_self">
+										<span>收货地址</span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="fore-4">
+							<a href="/user/message/internal.html">
+								消息
+
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div id="content">
+			<div class="content w1210 clearfix">
+				<!-- 引入左侧导航条文件 -->
+				<div class="con-left fl">
+					<div class="nav-list">
+						<div class="func func1">
+							<p class="title">
+								<i></i>
+								<span>会员中心</span>
+							</p>
+							<a href="/user/center.html" class="item curs">
+								<span>欢迎页</span>
+								<i></i>
+							</a>
+							<a href="/user/profile.html" class="item ">
+								<span>个人资料</span>
+								<i></i>
+							</a>
+							<a href="/user/security.html" class="item ">
+								<span>账户安全</span>
+								<i></i>
+							</a>
+
+							<a href="/user/address.html" class="item ">
+								<span>收货地址</span>
+								<i></i>
+							</a>
+							<a href="/user/message/internal.html" class="item ">
+								<span>我的消息</span>
+								<i></i>
+							</a>
+							<a href="/user/growth-value.html" class="item ">
+								<span>我的成长值</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func2">
+							<p class="title">
+								<i></i>
+								<span>交易中心</span>
+							</p>
+							<a href="/user/order.html" class="item ">
+								<span>我的订单</span>
+								<i></i>
+							</a>
+							<a href="/user/evaluate/index.html" class="item ">
+								<span>我的评价</span>
+								<i></i>
+							</a>
+							<a href="/user/back.html" class="item ">
+								<span>退款退货</span>
+								<i></i>
+							</a>
+							<!-- <a href="/user/replace.html" class="item">
+				<span>换货维修</span>
+				<i></i>
+			</a> -->
+							<a href="/user/complaint.html" class="item ">
+								<span>我的投诉</span>
+								<i></i>
+							</a>
+							<a href="/user/collect/goods.html" class="item ">
+								<span>我的收藏</span>
+								<i></i>
+							</a>
+							<!-- <a href="" class="item"><span>我的二手</span><i></i></a> -->
+						</div>
+						<div class="func func3">
+							<p class="title">
+								<i></i>
+								<span>资金中心</span>
+							</p>
+							<a href="/user/capital-account.html" class="item ">
+								<span>我的资金账户</span>
+								<i></i>
+							</a>
+							<a href="/user/recharge.html" class="item  ">
+								<span>我的充值</span>
+								<i></i>
+							</a>
+							<a href="" class="item">
+								<span>我的积分</span>
+								<i></i>
+							</a>
+							<a href="/user/bonus.html" class="item ">
+								<span>我的优惠券</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func4">
+							<p class="title">
+								<i></i>
+								<span>服务中心</span>
+							</p>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>退换货政策</span>
+								<i></i>
+							</a>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>操作帮助</span>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 正文，由view提供 -->
+
+
+				<div class="con-right fr">
+					<!-- 倒计时 -->
+					<script type="text/javascript" src="js/jquery.countdown.js"></script>
+					<div class="con-right-text">
+						<div class="tabmenu">
+							<ul class="tab">
+								<li class="active">订单详情</li>
+							</ul>
+						</div>
+
+						<div class="content-info">
+							<div class="order-step">
+								<!--完成步骤为dl添加current样式，完成操作内容后会显示完成时间-->
+								<dl class="current step-first">
+									<dt>拍下商品</dt>
+									<dd class="step-bg"></dd>
+									<dd class="date" title="下单时间">2017-02-08 16:40:24</dd>
+								</dl>
+								<dl class="">
+									<dt>买家付款</dt>
+									<dd class="step-bg"></dd>
+									<dd class="date" title="买家付款时间"></dd>
+								</dl>
+								<dl class="">
+									<dt>商家发货</dt>
+									<dd class="step-bg"></dd>
+									<dd class="date" title="商家发货时间"></dd>
+								</dl>
+								<dl class="">
+									<dt>确认收货</dt>
+									<dd class="step-bg"></dd>
+									<dd class="date" title="确认收货时间"></dd>
+								</dl>
+								<dl class="">
+									<dt>买家评价</dt>
+									<dd class="step-bg"></dd>
+									<dd class="date" title="完成时间"></dd>
+								</dl>
+							</div>
+							<div class="trade-details">
+								<table class="trade-details-table" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="table-td trade-imfor">
+												<div class="trade-imfor-title">
+													<h3>订单信息</h3>
+												</div>
+												<ul>
+													<li class="table-list">
+														<div class="trade-imfor-dt">收货地址：</div>
+														<div class="trade-imfor-dd">
+															<div class="address-detail">李先生，13980728872， 四川省-成都市-郫县 犀浦镇龙腾小区5-1-2</div>
+														</div>
+													</li>
+													<li class="table-list">
+														<div class="trade-imfor-dt">发票信息：</div>
+														<div class="trade-imfor-dd imfor-short-dd">
+															<span class="short-dd-nick">无需发票</span>
+														</div>
+													</li>
+													<li class="table-list">
+														<div class="trade-imfor-dt">买家留言：</div>
+														<div class="trade-imfor-dd message-detail">
+															<span class="no-content">-</span>
+														</div>
+													</li>
+													<li class="table-list">
+														<div class="trade-imfor-dt">送货时间：</div>
+														<div class="trade-imfor-dd message-detail">
+															<span class="no-content">工作日/周末/假日均可 </span>
+														</div>
+													</li>
+													<li class="table-list separate-top">
+														<div class="trade-imfor-dt">订单编号：</div>
+														<div class="trade-imfor-dd imfor-short-dd">20170208188580</div>
+														<div class="drop-down-container order-number">
+															<span class="more-detail">更多</span>
+															<div class="small-drop-down">
+																<div class="drop-down-content trade-detail-list" style="display: none;">
+																	<div class="list-pointer"></div>
+																	<table class="trade-dropdown-table">
+																		<tbody>
+
+																			<tr>
+																				<td class="trade-dropdown-title">成交时间：</td>
+																				<td class="trade-dropdown-data">2017-02-08 16:40:24</td>
+																			</tr>
+
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="table-list">
+														<div class="trade-imfor-dt">支付方式：</div>
+														<div class="trade-imfor-dd message-detail">
+															<span class="no-content">微信支付</span>
+														</div>
+													</li>
+													<li class="table-list">
+														<div class="trade-imfor-dt">商家信息：</div>
+														<div class="trade-imfor-dd imfor-short-dd">
+															<span class="short-dd-nick" title="爱购物官方自营二号店">
+											爱购物官方自营二号店
+											
+																						<a class="ww-light service-online service-btn" data-shop_id="6" href="javascript:;">
+												<img src="img/test/openim.png" width="20" height="20" border="0" alt="在线客服">
+											</a>
+																					</span>
+														</div>
+														<div class="drop-down-container merchant-detail-panel">
+															<span class="more-detail">更多</span>
+															<div class="small-drop-down">
+																<div class="drop-down-content trade-detail-list">
+																	<div class="list-pointer"></div>
+																	<table class="trade-dropdown-table">
+																		<tbody>
+																			<tr>
+																				<td class="trade-dropdown-title">该店主未实名认证</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</td>
+											<td class="table-td">
+												<dl class="user-status-imfor">
+													<dt class="imfor-icon">
+									<!-- 订单完成的图标 -->
+									<img src="img/warning.png">
+								</dt>
+													<dd class="imfor-title">
+														<h3>订单状态：商品已拍下，等待买家付款</h3>
+													</dd>
+												</dl>
+												<ul class="user-status-prompt">
+													<!-- 待付款 -->
+													<li>
+														<span>
+										还有
+										<strong class="second-color" id="counter_1080">06 天 23 小时 28 分 45 秒</strong>
+										来付款，超时订单将自动关闭
+									</span>
+													</li>
+													<script type="text/javascript">
+														$(document).ready(function() {
+															$("#counter_1080").countdown({
+																date: "02/15/2017 16:40:24",
+																onChange: function(event, timer) {},
+																onComplete: function(event) {
+																	$(this).html("已超时！");
+
+																	// 超时事件，预留
+																	$.ajax({
+																		type: 'GET',
+																		url: '/user/order/cancel-sys',
+																		data: {
+																			order_id: 1080
+																		},
+																		dataType: 'json',
+																		success: function(data) {
+																			if(data.code == 0) {
+																				window.location.reload();
+																			}
+																		}
+																	});
+																},
+																leadingZero: true
+															});
+
+														});
+													</script>
+													<!-- 待收货 -->
+
+													<!-- 交易关闭 -->
+												</ul>
+												<dl class="user-status-operate">
+													<!-- 不同的交易状态 -->
+
+													<dt>您可以</dt>
+
+													<dd>
+														<a href="http://www.itsource.com/checkout/pay.html?id=1080" class="on-payment">立即付款</a>
+													</dd>
+
+													<dd>
+														<a class="btn-link edit-order" data-id="1080" data-type="cancel">取消订单</a>
+													</dd>
+
+													<!-- 已付款，待发货 -->
+
+												</dl>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="bought-listform">
+								<dl class="bought-listform-header">
+									<dd class="header-item">商品</dd>
+									<dd class="header-price">单价（元）</dd>
+									<dd class="header-count">数量</dd>
+									<dd class="header-favorable">优惠（元）</dd>
+									<dd class="header-status">状态</dd>
+									<dd class="header-logistics">运费（元）</dd>
+								</dl>
+								<table class="bought-goods-list" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td class="header-content-detail">
+												<ul>
+													<li class="bought-listform-content">
+														<div class="content-package">
+															<span class="package-header"> 待发货商品 </span>
+														</div>
+														<table cellspacing="0" cellpadding="0">
+															<tbody>
+																<tr>
+																	<td class="header-item">
+																		<div class="item-container clearfix">
+																			<div class="item-img">
+																				<a class="pic s50" href="http://www.itsource.com/5790" title="查看宝贝详情" target="_blank">
+																					<img src="img/TB2x97hbg1I.eBjSszeXXc2hpXa_!!1647957945.jpg">
+																				</a>
+																			</div>
+																			<div class="item-meta">
+																				<a class="item-link" href="http://www.itsource.com/5790" title="查看宝贝详情" target="_blank">
+
+																					秋冬加绒加厚保暖纯色长袖衬衫打底衫韩范纯棉娃娃领白衬衣女上衣
+																				</a>
+
+																				<span class="icon-list">
+																<span class="icon-group">
+																																	</span>
+																				</span>
+																				<div class="item-props">
+																					<span class="sku">
+																																		<span>颜色分类:加绒元宝领</span>
+																					<span>尺码:XXL</span>
+																					</span>
+																				</div>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="header-price font-high-light">￥39.80</td>
+																	<td class="header-count font-high-light">1</td>
+																	<td class="header-favorable font-high-light">
+																		<div class="favorable-hight-light">￥0.00</div>
+																	</td>
+																	<td class="header-status font-high-light">
+																		<div class="font-black">
+
+																			未付款
+
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="header-item">
+																		<div class="item-container clearfix">
+																			<div class="item-img">
+																				<a class="pic s50" href="http://www.itsource.com/45580" title="查看宝贝详情" target="_blank">
+																					<img src="img/TB2ENnSXNqK.eBjSZJiXXaOSFXa_!!874022290.jpg">
+																				</a>
+																			</div>
+																			<div class="item-meta">
+																				<a class="item-link" href="http://www.itsource.com/45580" title="查看宝贝详情" target="_blank">
+
+																					雪纺衫2016秋装新款大码女装上衣韩版职业装白色修身长袖女打底衫
+																				</a>
+
+																				<span class="icon-list">
+																<span class="icon-group">
+																																	</span>
+																				</span>
+																				<div class="item-props">
+																					<span class="sku">
+																																		<span>颜色分类:浅紫色</span>
+																					<span>尺码:M（秋冬热卖）</span>
+																					</span>
+																				</div>
+																			</div>
+																		</div>
+																	</td>
+																	<td class="header-price font-high-light">￥115.00</td>
+																	<td class="header-count font-high-light">1</td>
+																	<td class="header-favorable font-high-light">
+																		<div class="favorable-hight-light">￥0.00</div>
+																	</td>
+																	<td class="header-status font-high-light">
+																		<div class="font-black">
+
+																			未付款
+
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</li>
+												</ul>
+											</td>
+											<td class="header-content-logistics">
+												<div class="font-high-light">￥0.00</div>
+												<div class="font-high-light">( 快递 )</div>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<div class="order-total">
+								<div class="total-count">
+									<div class="total-count-pay">
+                    <div class="count-title-pay">实付款：</div>
+                    <div class="total-count-num color">
+                        <strong>￥0.00</strong>
+                    </div>
+                                    </div>
+									<div class="total-count-pay">
+										<div class="total-count-pay-info">
+											<span class="first">订单总额：￥154.80</span>
+										</div>
+										<div class="total-count-pay-info">
+											<span>商品总额：￥154.80</span>
+
+											<em>+</em>
+											<span>运费：￥0.00</span>
+
+											<em>-</em>
+											<span title="店铺红包：￥0.00 商城红包：￥0.00" style="cursor: default;">红包：￥0.00</span>
+
+											<em>-</em>
+											<span>优惠：￥0.00</span>
+
+											<em>-</em>
+											<span>余额：￥0.00</span>
+
+											<em>=</em>
+											<span class="end second-color">实付款：￥154.80</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						$().ready(function() {
+							$("body").on("click", ".edit-order", function() {
+								var type = $(this).data("type");
+								var id = $(this).data("id");
+
+								title = '';
+								if(type == 'delay') {
+									title = "延长确认收货时间";
+								}
+								if(type == 'confirm') {
+									title = "确认收货";
+								}
+								if(type == 'cancel') {
+									title = "取消订单";
+								}
+
+								if($.modal($(this))) {
+									$.modal($(this)).show();
+								} else {
+									$.modal({
+										// 标题  
+										title: title,
+										trigger: $(this),
+										// ajax加载的设置  
+										ajax: {
+											url: '/user/order/edit-order?from=info',
+											data: {
+												type: type,
+												id: id
+											}
+										},
+									});
+								}
+
+							});
+						});
+					</script>
+				</div>
+			
+
+				<!-- 正文结束，由view提供 -->
+			</div>
+		</div>
+
+		<!-- 引入底部文件 -->
+		<!-- 底部 _start-->
+		<div class="site-footer">
+			<div class="footer-related">
+				<div class="footer-info">
+					<div class="info-text">
+						<!-- 底部导航 -->
+						<p class="nav-bottom">
+						</p>
+						<p>
+							Copyright 源代码教育咨询有限公司(www.itsource.cn) 版权所有
+							<a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备88888888号</a>
+						</p>
+						<p class="company-info" style="display: none;">四川省成都市高新区天府新谷</p>
+						<p class="qualified">
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+	</body>
+
+	</html>

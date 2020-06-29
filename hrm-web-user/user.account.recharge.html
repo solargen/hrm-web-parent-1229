@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]> <html lang="zh-CN" class="ie8"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/user.css" />
+		<link type="text/css" rel="stylesheet" href="css/color-style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.method.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.tablelist.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/common1.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+	</head>
+
+	<body>
+		<div id="nav" class="bg-color">
+			<div class="nav-content w1210">
+				<div class="logo-info">
+					<a href="/" target="_blank" class="logo fore1">
+						<img src="css/mall_logo_0_white.png" style="margin-top: 10px;" />
+					</a>
+					<div class="user-link">
+						<a href="/user.html" target="_self" class="fore2">我的商城</a>
+						<a href="/" target="_blank" class="fore3">返回商城首页</a>
+					</div>
+				</div>
+				<div class="navitems">
+					<ul>
+						<li class="fore-1">
+							<a href="/user.html" target="_self" href="">首页</a>
+						</li>
+						<li class="fore-3">
+							<div class="dl">
+								<div class="dt">
+									<span>账户设置</span>
+									<b></b>
+								</div>
+								<div class="dd">
+									<a href="/user/profile.html" target="_self">
+										<span>个人资料</span>
+									</a>
+									<a href="/user/security.html" target="_self">
+										<span>账户安全</span>
+									</a>
+									<a href="/user/bind.html" target="_self">
+										<span>账号绑定</span>
+									</a>
+									<a href="/user/address.html" target="_self">
+										<span>收货地址</span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="fore-4">
+							<a href="/user/message/internal.html">
+								消息
+
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div id="content">
+			<div class="content w1210 clearfix">
+				<!-- 引入左侧导航条文件 -->
+				<div class="con-left fl">
+					<div class="nav-list">
+						<div class="func func1">
+							<p class="title">
+								<i></i>
+								<span>会员中心</span>
+							</p>
+							<a href="/user/center.html" class="item curs">
+								<span>欢迎页</span>
+								<i></i>
+							</a>
+							<a href="/user/profile.html" class="item ">
+								<span>个人资料</span>
+								<i></i>
+							</a>
+							<a href="/user/security.html" class="item ">
+								<span>账户安全</span>
+								<i></i>
+							</a>
+
+							<a href="/user/address.html" class="item ">
+								<span>收货地址</span>
+								<i></i>
+							</a>
+							<a href="/user/message/internal.html" class="item ">
+								<span>我的消息</span>
+								<i></i>
+							</a>
+							<a href="/user/growth-value.html" class="item ">
+								<span>我的成长值</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func2">
+							<p class="title">
+								<i></i>
+								<span>交易中心</span>
+							</p>
+							<a href="/user/order.html" class="item ">
+								<span>我的订单</span>
+								<i></i>
+							</a>
+							<a href="/user/evaluate/index.html" class="item ">
+								<span>我的评价</span>
+								<i></i>
+							</a>
+							<a href="/user/back.html" class="item ">
+								<span>退款退货</span>
+								<i></i>
+							</a>
+							<!-- <a href="/user/replace.html" class="item">
+				<span>换货维修</span>
+				<i></i>
+			</a> -->
+							<a href="/user/complaint.html" class="item ">
+								<span>我的投诉</span>
+								<i></i>
+							</a>
+							<a href="/user/collect/goods.html" class="item ">
+								<span>我的收藏</span>
+								<i></i>
+							</a>
+							<!-- <a href="" class="item"><span>我的二手</span><i></i></a> -->
+						</div>
+						<div class="func func3">
+							<p class="title">
+								<i></i>
+								<span>资金中心</span>
+							</p>
+							<a href="/user/capital-account.html" class="item ">
+								<span>我的资金账户</span>
+								<i></i>
+							</a>
+							<a href="/user/recharge.html" class="item  ">
+								<span>我的充值</span>
+								<i></i>
+							</a>
+							<a href="" class="item">
+								<span>我的积分</span>
+								<i></i>
+							</a>
+							<a href="/user/bonus.html" class="item ">
+								<span>我的优惠券</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func4">
+							<p class="title">
+								<i></i>
+								<span>服务中心</span>
+							</p>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>退换货政策</span>
+								<i></i>
+							</a>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>操作帮助</span>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 正文，由view提供 -->
+
+				<div class="con-right fr">
+					<div class="con-right-text">
+						<div class="tabmenu">
+							<ul class="tab">
+								<li class="active">充值记录</li>
+							</ul>
+							<div class="user-tab-right">
+								<a href="http://www.itsource.com/user/recharge/online-recharge">在线充值</a>
+							</div>
+						</div>
+						<div class="content-info">
+							<form id="searchForm" name="searchForm" action="http://www.itsource.com/user/recharge.html" method="GET">
+								<div class="screen-term">
+									<label style="width: 33%;">
+				<span>充值类型：</span>
+				<select>
+					<option value="0">全部</option>
+					<option value="1">在线充值</option>
+				</select>
+			</label>
+									<label style="width: 33%; display: none">
+				<span>类型：</span>
+				<span class="select">
+<select id="pay_type" class="form-control" name="pay_type">
+<option value="all">全部记录</option>
+<option value="paid">已支付记录</option>
+<option value="not_paid">未支付记录</option>
+</select>
+</span>
+			</label>
+									<label style="width: 33%;">
+				<span>充值日期：</span>
+				<span class="select">
+<select id="pay_time" class="form-control" name="pay_time">
+<option value="0">全部</option>
+<option value="1">近三个月充值</option>
+<option value="2">近半年充值</option>
+<option value="3">一年内充值</option>
+</select>
+</span>
+			</label>
+									<label>
+				<input type="submit" value="搜索" class="search">
+			</label>
+								</div>
+
+							</form>
+							<div class="recharge-list clearfix">
+								<div class="floatbar">
+									<div class="bar-float">
+										<div class="select">
+											<ul>
+												<!-- 选择的当前的状态 给li标签追加class值为"active" _start -->
+												<li class="sel-item active" id="all">
+													<a class="sel-link" href="javascript:;">全部记录</a>
+												</li>
+												<!-- 选择的当前的状态 给li标签追加class值为"active" _end -->
+												<li class="sel-item" id="paid">
+													<a class="sel-link" href="javascript:;">已支付记录</a>
+												</li>
+												<li class="sel-item" id="not_paid">
+													<a class="sel-link" href="javascript:;">未支付记录</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 全部记录 _start -->
+								<div id="con_recharge_1" class="list-type">
+									<div class="list-type-text">
+
+										<div id="table_list">
+											<!---->
+											<table class="table">
+												<thead>
+													<tr>
+														<th>充值时间</th>
+														<th>充值金额（元）</th>
+														<th>留言</th>
+														<th>状态</th>
+														<th>支付方式</th>
+													</tr>
+
+												</thead>
+											</table>
+											<div class="no-data">
+												<i class="fa fa-exclamation-circle"></i> 没有符合条件的记录
+											</div>
+
+										</div>
+
+									</div>
+									<!-- 全部记录 _end -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						var tablelist = null;
+						$().ready(function() {
+							tablelist = $("#table_list").tablelist({
+								params: $("#searchForm").serializeJson(),
+							});
+
+							$("#searchForm").submit(function() {
+								// 控制下方快速选择tab样式
+								if($("#pay_type").val() != 'all') {
+									$("li[class^='sel-item']").removeClass('active');
+									$("li[id='" + $("#pay_type").val() + "']").addClass('active');
+								} else {
+									$("li[class^='sel-item']").removeClass('active');
+									$("li[id='all'").addClass('active');
+								}
+
+								// 序列化表单为JSON对象
+								var data = $(this).serializeJson();
+								// Ajax加载数据
+								tablelist.load(data);
+								// 阻止表单提交
+								return false;
+							});
+						});
+
+						$("li[class^='sel-item']").click(function() {
+							$("li[class^='sel-item']").removeClass('active');
+							$(this).addClass('active');
+							$("#pay_type").val($(this).attr("id"));
+
+							tablelist = $("#table_list").tablelist({
+								params: $("#searchForm").serializeJson()
+							});
+							tablelist.load();
+						});
+					</script>
+				</div>
+
+				<!-- 正文结束，由view提供 -->
+			</div>
+		</div>
+
+		<!-- 引入底部文件 -->
+		<!-- 底部 _start-->
+		<div class="site-footer">
+			<div class="footer-related">
+				<div class="footer-info">
+					<div class="info-text">
+						<!-- 底部导航 -->
+						<p class="nav-bottom">
+						</p>
+						<p>
+							Copyright 源代码教育咨询有限公司(www.itsource.cn) 版权所有
+							<a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备88888888号</a>
+						</p>
+						<p class="company-info" style="display: none;">四川省成都市高新区天府新谷</p>
+						<p class="qualified">
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+	</body>
+
+	</html>

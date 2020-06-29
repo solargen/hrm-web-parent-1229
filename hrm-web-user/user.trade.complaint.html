@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]> <html lang="zh-CN" class="ie8"> <![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户中心</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/user.css" />
+		<link type="text/css" rel="stylesheet" href="css/color-style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.method.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery.tablelist.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/common1.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+	</head>
+
+	<body>
+		<div id="nav" class="bg-color">
+			<div class="nav-content w1210">
+				<div class="logo-info">
+					<a href="/" target="_blank" class="logo fore1">
+						<img src="css/mall_logo_0_white.png" style="margin-top: 10px;" />
+					</a>
+					<div class="user-link">
+						<a href="/user.html" target="_self" class="fore2">我的商城</a>
+						<a href="/" target="_blank" class="fore3">返回商城首页</a>
+					</div>
+				</div>
+				<div class="navitems">
+					<ul>
+						<li class="fore-1">
+							<a href="/user.html" target="_self" href="">首页</a>
+						</li>
+						<li class="fore-3">
+							<div class="dl">
+								<div class="dt">
+									<span>账户设置</span>
+									<b></b>
+								</div>
+								<div class="dd">
+									<a href="/user/profile.html" target="_self">
+										<span>个人资料</span>
+									</a>
+									<a href="/user/security.html" target="_self">
+										<span>账户安全</span>
+									</a>
+									<a href="/user/bind.html" target="_self">
+										<span>账号绑定</span>
+									</a>
+									<a href="/user/address.html" target="_self">
+										<span>收货地址</span>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="fore-4">
+							<a href="/user/message/internal.html">
+								消息
+
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div id="content">
+			<div class="content w1210 clearfix">
+				<!-- 引入左侧导航条文件 -->
+				<div class="con-left fl">
+					<div class="nav-list">
+						<div class="func func1">
+							<p class="title">
+								<i></i>
+								<span>会员中心</span>
+							</p>
+							<a href="/user/center.html" class="item curs">
+								<span>欢迎页</span>
+								<i></i>
+							</a>
+							<a href="/user/profile.html" class="item ">
+								<span>个人资料</span>
+								<i></i>
+							</a>
+							<a href="/user/security.html" class="item ">
+								<span>账户安全</span>
+								<i></i>
+							</a>
+
+							<a href="/user/address.html" class="item ">
+								<span>收货地址</span>
+								<i></i>
+							</a>
+							<a href="/user/message/internal.html" class="item ">
+								<span>我的消息</span>
+								<i></i>
+							</a>
+							<a href="/user/growth-value.html" class="item ">
+								<span>我的成长值</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func2">
+							<p class="title">
+								<i></i>
+								<span>交易中心</span>
+							</p>
+							<a href="/user/order.html" class="item ">
+								<span>我的订单</span>
+								<i></i>
+							</a>
+							<a href="/user/evaluate/index.html" class="item ">
+								<span>我的评价</span>
+								<i></i>
+							</a>
+							<a href="/user/back.html" class="item ">
+								<span>退款退货</span>
+								<i></i>
+							</a>
+							<!-- <a href="/user/replace.html" class="item">
+				<span>换货维修</span>
+				<i></i>
+			</a> -->
+							<a href="/user/complaint.html" class="item ">
+								<span>我的投诉</span>
+								<i></i>
+							</a>
+							<a href="/user/collect/goods.html" class="item ">
+								<span>我的收藏</span>
+								<i></i>
+							</a>
+							<!-- <a href="" class="item"><span>我的二手</span><i></i></a> -->
+						</div>
+						<div class="func func3">
+							<p class="title">
+								<i></i>
+								<span>资金中心</span>
+							</p>
+							<a href="/user/capital-account.html" class="item ">
+								<span>我的资金账户</span>
+								<i></i>
+							</a>
+							<a href="/user/recharge.html" class="item  ">
+								<span>我的充值</span>
+								<i></i>
+							</a>
+							<a href="" class="item">
+								<span>我的积分</span>
+								<i></i>
+							</a>
+							<a href="/user/bonus.html" class="item ">
+								<span>我的优惠券</span>
+								<i></i>
+							</a>
+						</div>
+						<div class="func func4">
+							<p class="title">
+								<i></i>
+								<span>服务中心</span>
+							</p>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>退换货政策</span>
+								<i></i>
+							</a>
+							<a href="/shop/apply/index.html" class="item" target="_blank">
+								<span>操作帮助</span>
+								<i></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 正文，由view提供 -->
+
+				<div class="con-right fr">
+
+					<div class="con-right-text">
+						<div class="tabmenu">
+							<ul class="tab">
+								<li class="active">我的投诉</li>
+							</ul>
+						</div>
+						<div class="content-info refund-return-list">
+							<div class="complaint-list">
+								<form id="searchForm" method="GET" action="http://www.itsource.com/user/complaint.html" name="">
+									<div class="screen-term">
+										<label style="width: 30%;">
+						<span>订单编号：</span>
+						<input id="order_id" type="text" name="order_id">
+					</label>
+										<label style="width: 30%;">
+						<span>投诉编号：</span>
+						<input type="text" name="complaint_id" id="complaint_id">
+					</label>
+										<label style="width: 30%;">
+						<span>投诉状态：</span>
+						<select id="complaint_status">
+							<option value="-1">全部</option>
+							
+							<option value="0">买家提起投诉，等待卖家处理</option>
+							
+							<option value="1">协商处理中</option>
+							
+							<option value="2">投诉已撤销</option>
+							
+							<option value="3">申请平台方介入</option>
+							
+							<option value="4">平台方处理中</option>
+							
+							<option value="5">平台方已仲裁，投诉成立</option>
+							
+							<option value="6">平台方已仲裁，投诉不成立</option>
+							
+
+						</select>
+					</label>
+										<label style="width: 30%;">
+						<span>申请时间：</span>
+						<select id="complaint_time">
+							<option value="0">全部</option>
+							<option value="1">近3个月的订单</option>
+							<option value="2">近半年的订单</option>
+							<option value="3">今年内的订单</option>
+
+						</select>
+					</label>
+										<label style="width: 10%;">
+						<input type="submit" value="搜索" class="search">
+					</label>
+									</div>
+								</form>
+
+								<!---->
+								<table id="table_list" class="table">
+									<thead>
+										<tr>
+											<th style="width: 14%;">投诉编号</th>
+											<th style="width: 16%;">订单编号</th>
+											<th style="width: 16%; cursor: default;" class="">投诉卖家</th>
+											<th style="width: 17%; cursor: default;" class="">投诉原因</th>
+											<th style="width: 12%; cursor: default;" class="">申请时间</th>
+											<th style="width: 15%;">投诉状态</th>
+											<th style="width: 8%;">操作</th>
+										</tr>
+										<tr style="border-right-style: none; border-left-style: none; border-bottom-style: none">
+											<td colspan="7">
+												<div class="no-data">
+													<i class="fa fa-exclamation-circle"></i> 您还没有任何投诉记录
+												</div>
+											</td>
+										</tr>
+									</thead>
+								</table>
+								<!---->
+
+							</div>
+							<div class="operat-tips">
+								<h4>我的投诉注意事项</h4>
+								<ul class="operat-panel">
+									<li>
+										<span>交易状态为“交易成功”后，4天内可以投诉商家</span>
+									</li>
+									<li>
+										<span>可申请由平台方介入处理投诉，如投诉成功后，被投诉店铺将会受到惩罚</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<a class="scroll-to-top active"><i class="fa fa-chevron-up"></i></a>
+
+					<script type="text/javascript">
+						$().ready(function() {
+							var tablelist = $("#table_list").tablelist({
+								params: $("#searchForm").serializeJson()
+							});
+							$("#searchForm").submit(function() {
+								tablelist.load({
+									// 订单编号
+									'order_id': $("#order_id").val(),
+									// 投诉编号
+									'complaint_id': $("#complaint_id").val(),
+									//投诉状态
+									'complaint_status': $("#complaint_status").val(),
+									//投诉时间
+									'complaint_time': $("#complaint_time").val(),
+								});
+								return false;
+							});
+						});
+					</script>
+				</div>
+
+				<!-- 正文结束，由view提供 -->
+			</div>
+		</div>
+
+		<!-- 引入底部文件 -->
+		<!-- 底部 _start-->
+		<div class="site-footer">
+			<div class="footer-related">
+				<div class="footer-info">
+					<div class="info-text">
+						<!-- 底部导航 -->
+						<p class="nav-bottom">
+						</p>
+						<p>
+							Copyright 源代码教育咨询有限公司(www.itsource.cn) 版权所有
+							<a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备88888888号</a>
+						</p>
+						<p class="company-info" style="display: none;">四川省成都市高新区天府新谷</p>
+						<p class="qualified">
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+	</body>
+
+	</html>
