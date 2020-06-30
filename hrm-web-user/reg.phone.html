@@ -70,7 +70,7 @@
 </label>
 										<div class="form-control-box">
 
-											<input type="text" id="mobileregistermodel-mobile" class="form-control" name="MobileRegisterModel[mobile]">
+											<input v-model="telephone" type="text" id="mobileregistermodel-mobile" class="form-control" name="MobileRegisterModel[mobile]">
 
 										</div>
 
@@ -85,7 +85,7 @@
 </label>
 										<div class="form-control-box">
 
-											<input type="password" id="password" class="form-control" name="MobileRegisterModel[password]" value="" autocomplete="off">
+											<input v-model="password" type="password" id="password" class="form-control" name="MobileRegisterModel[password]" value="" autocomplete="off">
 											<i class="fa fa-eye-slash pwd-toggle" data-id="password"></i>
 
 										</div>
@@ -101,7 +101,7 @@
 </label>
 										<div class="form-control-box">
 
-											<input type="text" id="captcha" class="input-small" name="MobileRegisterModel[captcha]">
+											<input v-model="imageCode" type="text" id="captcha" class="input-small" name="MobileRegisterModel[captcha]">
 											<label class="captcha">
 					
 					<img @click="changeImageCode" id="captcha-image" width="100" height="40" class="captcha-image" :src="'data:image/png;base64,'+imageBase64" alt="点击换图" title="点击换图" style="vertical-align: middle; cursor: pointer;">
@@ -123,9 +123,9 @@
 </label>
 										<div class="form-control-box">
 
-											<input type="text" id="mobileregistermodel-sms_captcha" class="input-small" name="MobileRegisterModel[sms_captcha]">
+											<input v-model="smsCode" type="text" id="mobileregistermodel-sms_captcha" class="input-small" name="MobileRegisterModel[sms_captcha]">
 
-											<a href="javascript:void(0);" class="phonecode">获取短信校验码</a>
+											<button :disabled="enable" @click="getSMSCode" class="phonecode">{{message}}</button>
 
 										</div>
 
@@ -167,7 +167,7 @@
 </label>
 											<div class="form-control-box">
 
-												<input type="button" class="btn-img btn-entry bg-color" id="btn_submit" name="btn_submit" value="同意协议并注册">
+												<input type="button" @click="submitReg" class="btn-img btn-entry bg-color" id="btn_submit" name="btn_submit" value="同意协议并注册">
 
 											</div>
 
@@ -182,9 +182,61 @@
 								let app = new Vue({
 									el:"#app",
 									data:{
-                                        imageBase64:""
+                                        imageBase64:null,
+										telephone:null,
+										imageCode:null,
+										message:"获取短信校验码",
+										enable:false,
+										smsCode:null,
+										password:null
 									},
 									methods:{
+									    //提交注册
+                                        submitReg(){
+                                            //前端验证
+                                            let param = {
+                                                telephone:this.telephone,
+                                                imageCode:this.imageCode,
+                                                smsCode:this.smsCode,
+                                                password:this.password,
+												uuid:sessionStorage.getItem("uuid")
+											}
+											axios.post("/user/sso/telephoneRegister",param)
+												.then(res=>{
+												    let {success,message} = res.data;
+												    if(success){
+												        alert("注册成功!")
+														location.href = "login.html"
+													}
+												})
+										},
+                                        getSMSCode(){
+                                            axios.get("/user/code/sendSMSCode",{
+                                                params:{
+                                                    telephone:this.telephone,
+                                                    imageCode:this.imageCode,
+													uuid:sessionStorage.getItem("uuid")
+												}
+											}).then(res=>{
+											    let {success,message} = res.data;
+											    if(success){
+													this.enable = true;
+													let msg = "秒后重发";
+											        let num = 30;
+											        let intervalId = setInterval(()=>{
+											            num--;
+											            this.message = num+msg;
+											            if(num==0){
+											                clearInterval(intervalId)
+															this.message = "获取短信校验码";
+											                this.enable = false;
+														}
+													},1000)
+												}else{
+											        alert(message)
+												}
+											})
+										},
                                         changeImageCode(){
                                             this.loadImageCode();
 										},
